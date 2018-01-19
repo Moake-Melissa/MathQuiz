@@ -12,7 +12,6 @@ namespace Math_Quiz
 {
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();
@@ -49,8 +48,6 @@ namespace Math_Quiz
         //currentDate
         DateTime currDate;
         
-
-
 
         /// <summary>
         /// Start the quiz by filling in all of the problems
@@ -183,8 +180,11 @@ namespace Math_Quiz
             }
         }
 
+        // When the sum box changes run this code
         private void sumChanged(object sender, EventArgs e)
         {
+            // If the user answers the problem correctly play a sound
+            // and highlight the box light green (for those hard of hearing).
             if (addend1 + addend2 == sum.Value)
             {
                 System.Media.SystemSounds.Asterisk.Play();
@@ -196,8 +196,11 @@ namespace Math_Quiz
             }
         }
 
+        // When the difference box changes run this code
         private void differenceChanged(object sender, EventArgs e)
         {
+            // If the user answers the problem correctly play a sound
+            // and highlight the box light green (for those hard of hearing).
             if (minuend - subtrahend == difference.Value)
             {
                 System.Media.SystemSounds.Asterisk.Play();
@@ -209,8 +212,11 @@ namespace Math_Quiz
             }
         }
 
+        // When the product box changes run this code
         private void productChanged(object sender, EventArgs e)
         {
+            // If the user answers the problem correctly play a sound
+            // and highlight the box light green (for those hard of hearing).
             if (multiplicand * multiplier == product.Value)
             {
                 System.Media.SystemSounds.Asterisk.Play();
@@ -222,8 +228,11 @@ namespace Math_Quiz
             }
         }
 
+        // When the quotient box changes run this code
         private void quotientChanged(object sender, EventArgs e)
         {
+            // If the user answers the problem correctly play a sound
+            // and highlight the box light green (for those hard of hearing).
             if (dividend / divisor == quotient.Value)
             {
                 System.Media.SystemSounds.Asterisk.Play();
